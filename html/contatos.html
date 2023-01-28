@@ -10,7 +10,7 @@
     <header>
         <div class="caixa">
             <h1>
-                <img src="../assets/logo.png" alt="logo">
+                <img src="../assets/logo.png" alt="logo da barbearia alura">
             </h1>
        
             <nav>
@@ -32,31 +32,49 @@
     <main>
         <form action="">
             <label for="nomeSobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomeSobrenome">
+            <input type="text" id="nomeSobrenome" class="input-padrao" required>
 
             <label for="email">E-mail</label>
-            <input type="text" id="email">
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
             <label for="tel">Telefone</label>
-            <input type="text" id="tel">
+            <input type="tel" id="tel" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
             <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="10" id="mensagem"></textarea>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
 
-            <div>
-                <p>Como prefere o nosso contato?</p>
-                <label for="radio-email">Email</label>
-                <input type="radio" name="contato" value="email" id="radio-email">
+            <!-- em formularios usamos a tag fildset no lugar de div -->
+            <fieldset>
+            <!-- em formularios usamos a tag legend no lugar de p para paragrafos -->
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                    Email
+                </label>
+                
 
-                <label for="radio-telefone">Telefone</label>
-                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone
+                </label>
 
-                <label for="radio-whatsapp">Whatsapp</label>
-                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
-            </div>
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                    Whatsapp
+                </label>
+            </fieldset>
 
-            <label>
-                <input type="checkbox"> Gostaria de receber as nossas novidades por email?
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="input-padrao">
+                <input type="checkbox" checked> Gostaria de receber as nossas novidades por email?
             </label>
 
             <input type="submit" value="Enviar formulário">
