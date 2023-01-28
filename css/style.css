@@ -1,0 +1,45 @@
+
+#banner{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+.itens{
+    font-style: italic;
+}
+
+#missao{
+    font-size: 20px
+}
+
+em{
+    color: red;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+.beneficios{
+    background: white;
+    padding: 20px;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+ul{
+    display: inline-block; /* permite que eu coloque elementos ao lado e permite que eu mexa nos alinhamentos*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
